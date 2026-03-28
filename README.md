@@ -83,7 +83,19 @@ Students must design a **Customer Churn Prediction Dashboard** consisting of:
 The dashboard should contain the following sections:
 
 ```
+┌─────────────────────────────────────────────────────────┐ │ NAVIGATION BAR (Bootstrap Navbar) │ │ Dashboard | Analytics | Model Performance | Prediction │ └─────────────────────────────────────────────────────────┘
 
+┌─────────────┬──────────────┬────────────┬──────────────┐ │ Total │ Churned │ Churn Rate │ Model │ │ Customers │ Customers │ (%) │ Accuracy (%) │ │ │ │ │ │ │ (Bootstrap KPI Cards) │ └─────────────┴──────────────┴────────────┴──────────────┘
+
+┌──────────────────────────┬──────────────────────────┐ │ │ │ │ Churn Distribution │ Gender vs Churn │ │ (Pie Chart - DC.js) │ (Stacked Bar - DC.js) │ │ │ │ ├──────────────────────────┼──────────────────────────┤ │ │ │ │ Spend vs Churn │ Tenure vs Churn │ │ (Scatter Plot - D3.js) │ (Bar Chart - DC.js) │ │ │ │ └──────────────────────────┴──────────────────────────┘
+
+┌──────────────────────────────────────────────────────┐ │ MODEL PERFORMANCE SECTION │ │ ┌──────────────────┐ ┌──────────────────────┐ │ │ │ Confusion Matrix │ │ Classification Report │ │ │ │ (Heatmap) │ │ (Grouped Bar Chart) │ │ │ └──────────────────┘ └──────────────────────┘ │ └──────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────┐ │ PREDICTION TOOL SECTION │ │ Form with input fields and Predict button │ │ Result display with color coding (Green/Red) │ └──────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────┐ │ CUSTOMER DATASET TABLE │ │ DataTables.js with search, sort, pagination, export │ └──────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────┐ │ FOOTER │ └──────────────────────────────────────────────────────┘
 ---
 
 ## Header / Navigation Bar
